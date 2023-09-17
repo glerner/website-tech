@@ -1,0 +1,84 @@
+/*
+Theme Name: Website Tech for Small Businesses 2023
+Theme URI: https://website-tech.glerner.com
+Author: George Lerner
+Author URI: https://glerner.com
+Description: Website Tech is a Twenty Twenty-Three child
+Requires at least: 6.1
+Tested up to: 6.2.2
+Requires PHP: 7.2
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+Text Domain: website-tech
+Template: twentytwentythree
+Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, featured-images, full-site-editing, block-patterns, rtl-language-support, sticky-post, threaded-comments, translation-ready, wide-blocks, block-styles, accessibility-ready, blog, portfolio, news
+*/
+
+/* Fix sloppy Divi theme styling. Remove after have finished moving off Divi */
+.block-editor__container #et-switch-to-divi, .block-editor__container #et-switch-to-gutenberg, .block-editor__container .editor-post-switch-to-divi, .block-editor__container .editor-post-switch-to-divi.components-button.is-default, .block-editor__container .editor-post-switch-to-gutenberg, .block-editor__container .editor-post-switch-to-gutenberg.components-button.is-default, .editor-styles-wrapper .wp-site-blocks #et-switch-to-divi,
+.editor-styles-wrapper .wp-site-blocks #et-switch-to-gutenberg, .editor-styles-wrapper .wp-site-blocks .editor-post-switch-to-divi, .editor-styles-wrapper .wp-site-blocks .editor-post-switch-to-divi.components-button.is-default, .editor-styles-wrapper .wp-site-blocks .editor-post-switch-to-gutenberg, .editor-styles-wrapper .wp-site-blocks .editor-post-switch-to-gutenberg.components-button.is-default,
+.gutenberg__editor #et-switch-to-divi, .gutenberg__editor #et-switch-to-gutenberg, .gutenberg__editor .editor-post-switch-to-divi, .gutenberg__editor .editor-post-switch-to-divi.components-button.is-default, .gutenberg__editor .editor-post-switch-to-gutenberg, .gutenberg__editor .editor-post-switch-to-gutenberg.components-button.is-default { color: blue; overflow: hidden; }
+
+/* Screen Reader only
+from https://equalizedigital.com/accessibility-checker/empty-link/ */
+.sr-only{
+   position:absolute;
+   left:-10000px;
+   top:auto;
+   width:1px;
+   height:1px;
+   overflow:hidden;
+}
+
+/* styling for WS Form */
+.wsf-field, input[type="checkbox"].wsf-field + label.wsf-label, input[type="checkbox"].wsf-field + label.wsf-label::before {
+	color: var(--wp--preset--color--foreground);
+    background-color: var(--wp--preset--color--secondary);
+}
+.ws-form .wsf-alert {
+	background-color: var(--wp--preset--color--secondary);
+    border-color: var(--wp--preset--color--secondary);
+	color: var(--wp--preset--color--foreground);
+}
+.wsf-help {
+	color: var(--wp--preset--color--foreground);
+	display: block;
+	font-size: var(--wp--preset--font-size--normal);
+	line-height: 1.4;
+	margin-top: 5px;
+}
+/* end WS Form */
+
+/* big CSS hover underline, thin un-hovered */
+a, .elementor a:where(:not(.wp-element-button)) {
+    vertical-align: baseline;
+    text-decoration: underline;
+    text-decoration-thickness: .15em;  /* .25rem all the same thickness made too thick for tiny text */
+    text-underline-offset: .25em;		/* em so offset on large fonts clears descenders */
+    color: var(--wp--preset--color--complementary-dark);
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    word-break: break-word;
+}
+.elementor-nav-menu--layout-horizontal .elementor-nav-menu a {
+    white-space: nowrap;
+    flex-grow: 1;
+    text-decoration: none;
+}
+a:hover {
+	text-underline-offset: .2em;
+    text-decoration-skip-ink: auto;
+}
+
+
+/* size and background for site logo */
+.edit-post-fullscreen-mode-close.components-button .edit-post-fullscreen-mode-close_site-icon {
+    border-radius: 2px;
+    height: 36px;
+    margin-top: -1px;
+    object-fit: contain;
+    width: 36px;
+    background-color: var(--wp--preset--color--base);
+    padding: 2px;
+}
