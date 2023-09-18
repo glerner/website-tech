@@ -410,7 +410,7 @@
 		"css": " \n  ",
 		"color": {
 			"text": "#000000",
-			"background": "#FAF5F0"
+			"background": "#ffffff"
 		},
 		"blocks": {
 			"core/comments-title":{
@@ -808,13 +808,13 @@
 					"radius": "0"
 				},
 				"color": {
-					"background": "var(--wp--preset--color--primary-dark)",
+					"background": "var(--wp--preset--color--accent)",
 					"text": "var(--wp--preset--color--base)"
 				},
 				":hover": {
 					"color": {
 						"background": "var(--wp--preset--color--base)",
-						"text": "var(--wp--preset--color--primary-dark)"
+						"text": "var(--wp--preset--color--accent)"
 					}
 				},
 				":focus": {
@@ -891,12 +891,12 @@
 			},
 			"link": {
 				"color": {
-					"text": "var(--wp--preset--color--tertiary-dark)"
+					"text": "var(--wp--preset--color--accent)"
 				},
 				":hover": {
 					"color": {
-						"text": "var(--wp--preset--color--tertiary-dark)",
-						"background": "var(--wp--preset--color--base)"
+						"text": "var(--wp--preset--color--base)",
+						"background": "var(--wp--preset--color--accent)"
 					}
 				},
 				":focus": {
