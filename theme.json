@@ -55,124 +55,34 @@
 			"defaultGradients": false,
 			"palette": [
 				{
-					"color": "#ffffff",
-					"name": "Base",
+					"color": "#FAF5F0",
+					"name": "Background - Whispering Ivory",
 					"slug": "base"
 				},
 				{
 					"color": "#000000",
-					"name": "Contrast",
+					"name": "Contrast (Text)",
 					"slug": "contrast"
 				},
-				{
-					"slug": "primary",
-					"color": "#42230a",
-					"name": "Seal Brown"
-				},
-				{
-					"slug": "secondary",
-					"color": "#6e4d2b",
-					"name": "Kobicha"
-				},
-				{
-					"slug": "tertiary",
-					"color": "#D7CEC1",
-					"name": "Bone"
-				},
-				{
-					"slug": "complementary",
-					"color": "#4A1818",
-					"name": "Chocolate Cosmos"
-				},
-				{
-					"slug": "primary-lighter",
-					"color": "#c3bba2",
-					"name": "Khaki 2 (bone then khaki 2)"
-				},
-				{
-					"slug": "primary-light",
-					"color": "#c6c9b0",
-					"name": "Ash gray"
-				},
-				{
-					"slug": "primary-dark",
-					"color": "#3e432d",
-					"name": "Drab Dark Brown"
-				},
-				{
-					"slug": "primary-darker",
-					"color": "#262e1f",
-					"name": "Black Olive"
-				},
-				{
-					"slug": "secondary-lighter",
-					"color": "#bbc1a4",
-					"name": "Sage"
-				},
-				{
-					"slug": "secondary-light",
-					"color": "#bbc1a4",
-					"name": "Sage"
-				},
-				{
-					"slug": "secondary-dark",
-					"color": "#0F2C2C",
-					"name": "Secondary dark"
-				},
-				{
-					"slug": "secondary-darker",
-					"color": "#021919",
-					"name": "Secondary darker"
-				},
-				{
-					"slug": "tertiary-lighter",
-					"color": "#B5C497",
-					"name": "Tertiary lighter"
-				},
-				{
-					"slug": "tertiary-light",
-					"color": "#E8D656",
-					"name": "Tertiary Light"
-				},
-				{
-					"slug": "tertiary-dark",
-					"color": "#354517",
-					"name": "Tertiary dark"
-				},
-				{
-					"slug": "tertiary-darker",
-					"color": "#1B2703",
-					"name": "Tertiary darker"
-				},
-				{
-					"slug": "complementary-lighter",
-					"color": "#D2A2A2",
-					"name": "Complementary lighter"
-				},
-				{
-					"slug": "complementary-light",
-					"color": "#D2A2A2",
-					"name": "Complementary Light"
-				},
-				{
-					"slug": "complementary-dark",
-					"color": "#4A1818",
-					"name": "Chocolate Cosmos"
-				},
-				{
-					"slug": "complementary-darker",
-					"color": "#290404",
-					"name": "Complementary darker"
-				},
-				{
-					"slug": "contrast",
-					"color": "#290404",
-					"name": "Contrast"
-				},
+				{ "slug": "primary", "color": "#6e4d2b", "name": "Earthy Umber" },
+				{ "slug": "secondary", "color": "#D7CEC1", "name": "Gentle Alabaster" },
+				{ "slug": "tertiary", "color": "#42230a", "name": "Deep Espresso" },
+				{ "slug": "primary-lighter", "color": "#A79376", "name": "Earthy Umber - Lighter" },
+				{ "slug": "primary-light", "color": "#8B6F5A", "name": "Earthy Umber - Light" },
+				{ "slug": "primary-dark", "color": "#4E3920", "name": "Earthy Umber - Dark" },
+				{ "slug": "primary-darker", "color": "#3B2C15", "name": "Earthy Umber - Darker" },
+				{ "slug": "secondary-lighter", "color": "#EAE4DC", "name": "Gentle Alabaster - Lighter" },
+				{ "slug": "secondary-light", "color": "#E0D9D0", "name": "Gentle Alabaster - Light" },
+				{ "slug": "secondary-dark", "color": "#9A8E81", "name": "Gentle Alabaster - Dark" },
+				{ "slug": "secondary-darker", "color": "#807366", "name": "Gentle Alabaster - Darker" },
+				{ "slug": "tertiary-lighter", "color": "#7D634D", "name": "Deep Espresso - Lighter" },
+				{ "slug": "tertiary-light", "color": "#695143", "name": "Deep Espresso - Light" },
+				{ "slug": "tertiary-dark", "color": "#2E1900", "name": "Deep Espresso - Dark" },
+				{ "slug": "tertiary-darker", "color": "#1F1000", "name": "Deep Espresso - Darker" },
 				{
 					"slug": "highlight1",
-					"color": "#F9FE88",
-					"name": "Highlight 1"
+					"color": "#9B8060",
+					"name": "Highlight - Muted Taupe"
 				},
 				{
 					"slug": "highlight2",
@@ -183,11 +93,6 @@
 					"slug": "highlight3",
 					"color": "#C1E3C1",
 					"name": "Highlight 3"
-				},
-				{
-					"slug": "gray-medium",
-					"color": "#888888",
-					"name": "Gray Medium"
 				},
 				{
 					"slug": "transparent",
@@ -440,7 +345,7 @@
 		"css": " \n  ",
 		"color": {
 			"text": "#000000",
-			"background": "#ffffff"
+			"background": "#FAF5F0"
 		},
 		"blocks": {
 			"core/comments-title":{
