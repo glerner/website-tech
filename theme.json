@@ -55,34 +55,99 @@
 			"defaultGradients": false,
 			"palette": [
 				{
-					"color": "#FAF5F0",
-					"name": "Background - Whispering Ivory",
-					"slug": "base"
-				},
-				{
+					"slug": "base",
+					"color": "#D9D4C3",
+					"name": "Soft Papyrus"
+				  },
+				  {
+					"slug": "contrast",
 					"color": "#000000",
-					"name": "Contrast (Text)",
-					"slug": "contrast"
-				},
-				{ "slug": "primary", "color": "#6e4d2b", "name": "Earthy Umber" },
-				{ "slug": "secondary", "color": "#D7CEC1", "name": "Gentle Alabaster" },
-				{ "slug": "tertiary", "color": "#42230a", "name": "Deep Espresso" },
-				{ "slug": "primary-lighter", "color": "#A79376", "name": "Earthy Umber - Lighter" },
-				{ "slug": "primary-light", "color": "#8B6F5A", "name": "Earthy Umber - Light" },
-				{ "slug": "primary-dark", "color": "#4E3920", "name": "Earthy Umber - Dark" },
-				{ "slug": "primary-darker", "color": "#3B2C15", "name": "Earthy Umber - Darker" },
-				{ "slug": "secondary-lighter", "color": "#EAE4DC", "name": "Gentle Alabaster - Lighter" },
-				{ "slug": "secondary-light", "color": "#E0D9D0", "name": "Gentle Alabaster - Light" },
-				{ "slug": "secondary-dark", "color": "#9A8E81", "name": "Gentle Alabaster - Dark" },
-				{ "slug": "secondary-darker", "color": "#807366", "name": "Gentle Alabaster - Darker" },
-				{ "slug": "tertiary-lighter", "color": "#7D634D", "name": "Deep Espresso - Lighter" },
-				{ "slug": "tertiary-light", "color": "#695143", "name": "Deep Espresso - Light" },
-				{ "slug": "tertiary-dark", "color": "#2E1900", "name": "Deep Espresso - Dark" },
-				{ "slug": "tertiary-darker", "color": "#1F1000", "name": "Deep Espresso - Darker" },
-				{
+					"name": "Black"
+				  },
+				  {
+					"slug": "primary-lighter",
+					"color": "#A89982",
+					"name": "Primary Rich Espresso Lighter"
+				  },
+				  {
+					"slug": "primary-light",
+					"color": "#8F7D6D",
+					"name": "Primary Rich Espresso Light"
+				  },
+				  {
+					"slug": "primary-dark",
+					"color": "#3E291B",
+					"name": "Primary Rich Espresso Dark"
+				  },
+				  {
+					"slug": "primary-darker",
+					"color": "#2F1E0F",
+					"name": "Primary Rich Espresso Darker"
+				  },
+				  {
+					"slug": "secondary-lighter",
+					"color": "#EDE9E0",
+					"name": "Secondary Soft Papyrus Lighter"
+				  },
+				  {
+					"slug": "secondary-light",
+					"color": "#E3DEC9",
+					"name": "Secondary Soft Papyrus Light"
+				  },
+				  {
+					"slug": "secondary-dark",
+					"color": "#AFAA96",
+					"name": "Secondary Soft Papyrus Dark"
+				  },
+				  {
+					"slug": "secondary-darker",
+					"color": "#9C927D",
+					"name": "Secondary Soft Papyrus Darker"
+				  },
+				  {
+					"slug": "tertiary-lighter",
+					"color": "#8B6D58",
+					"name": "Tertiary Dark Mocha Lighter"
+				  },
+				  {
+					"slug": "tertiary-light",
+					"color": "#7C614F",
+					"name": "Tertiary Dark Mocha Light"
+				  },
+				  {
+					"slug": "tertiary-dark",
+					"color": "#2F220F",
+					"name": "Tertiary Dark Mocha Dark"
+				  },
+				  {
+					"slug": "tertiary-darker",
+					"color": "#211907",
+					"name": "Tertiary Dark Mocha Darker"
+				  },
+				  {
+					"slug": "accent",
+					"color": "#27A8A1",
+					"name": "Accent Vibrant Teal"
+				  },
+				  {
+					"slug": "primary",
+					"color": "#5A3D24",
+					"name": "Primary Rich Espresso"
+				  },
+				  {
+					"slug": "secondary",
+					"color": "#D9D4C3",
+					"name": "Secondary Soft Papyrus"
+				  },
+				  {
+					"slug": "tertiary",
+					"color": "#493619",
+					"name": "Tertiary Dark Mocha"
+				  },
+				  {
 					"slug": "highlight1",
-					"color": "#9B8060",
-					"name": "Highlight - Muted Taupe"
+					"color": "#F9FE88",
+					"name": "Highlight 1"
 				},
 				{
 					"slug": "highlight2",
@@ -135,42 +200,42 @@
 			"gradients": [
 				{
 					"slug": "vertical-secondary-to-tertiary",
-					"gradient": "linear-gradient(to bottom,var(--wp--preset--color--secondary) 0%,var(--wp--preset--color--tertiary) 100%)",
+					"gradient": "linear-gradient(to bottom,var(--wp--preset--color--secondary-dark) 0%,var(--wp--preset--color--tertiary-dark) 100%)",
 					"name": "Vertical secondary to tertiary"
 				},
 				{
 					"slug": "vertical-secondary-to-background",
-					"gradient": "linear-gradient(to bottom,var(--wp--preset--color--secondary) 0%,var(--wp--preset--color--background) 100%)",
+					"gradient": "linear-gradient(to bottom,var(--wp--preset--color--secondary-dark) 0%,var(--wp--preset--color--base) 100%)",
 					"name": "Vertical secondary to background"
 				},
 				{
 					"slug": "vertical-tertiary-to-background",
-					"gradient": "linear-gradient(to bottom,var(--wp--preset--color--tertiary) 0%,var(--wp--preset--color--background) 100%)",
+					"gradient": "linear-gradient(to bottom,var(--wp--preset--color--tertiary-dark) 0%,var(--wp--preset--color--base) 100%)",
 					"name": "Vertical tertiary to background"
 				},
 				{
 					"slug": "diagonal-primary-to-foreground",
-					"gradient": "linear-gradient(to bottom right,var(--wp--preset--color--primary) 0%,var(--wp--preset--color--foreground) 100%)",
+					"gradient": "linear-gradient(to bottom right,var(--wp--preset--color--primary-dark) 0%,var(--wp--preset--color--foreground) 100%)",
 					"name": "Diagonal primary to foreground"
 				},
 				{
 					"slug": "diagonal-secondary-to-background",
-					"gradient": "linear-gradient(to bottom right,var(--wp--preset--color--secondary) 50%,var(--wp--preset--color--background) 50%)",
+					"gradient": "linear-gradient(to bottom right,var(--wp--preset--color--secondary-dark) 50%,var(--wp--preset--color--base) 50%)",
 					"name": "Diagonal secondary to background"
 				},
 				{
 					"slug": "diagonal-background-to-secondary",
-					"gradient": "linear-gradient(to bottom right,var(--wp--preset--color--background) 50%,var(--wp--preset--color--secondary) 50%)",
+					"gradient": "linear-gradient(to bottom right,var(--wp--preset--color--base) 50%,var(--wp--preset--color--secondary-dark) 50%)",
 					"name": "Diagonal background to secondary"
 				},
 				{
 					"slug": "diagonal-tertiary-to-background",
-					"gradient": "linear-gradient(to bottom right,var(--wp--preset--color--tertiary) 50%,var(--wp--preset--color--background) 50%)",
+					"gradient": "linear-gradient(to bottom right,var(--wp--preset--color--tertiary-dark) 50%,var(--wp--preset--color--base) 50%)",
 					"name": "Diagonal tertiary to background"
 				},
 				{
 					"slug": "diagonal-background-to-tertiary",
-					"gradient": "linear-gradient(to bottom right,var(--wp--preset--color--background) 50%,var(--wp--preset--color--tertiary) 50%)",
+					"gradient": "linear-gradient(to bottom right,var(--wp--preset--color--base) 50%,var(--wp--preset--color--tertiary-dark) 50%)",
 					"name": "Diagonal background to tertiary"
 				},
 				{
@@ -324,7 +389,7 @@
                     "name": "Medium"
                 },
                 {
-                    "size": "1.25rem",
+                    "size": "2rem",
                     "fluid": {
                         "min": "1.25rem",
                         "max": "2.5rem"
@@ -373,7 +438,7 @@
 						},
 						":active": {
 							"color": {
-								"text": "var(--wp--preset--color--secondary)"
+								"text": "var(--wp--preset--color--secondary-darker)"
 							},
 							"typography": {
 								"textDecoration": "none"
@@ -403,7 +468,7 @@
 						},
 						":active": {
 							"color": {
-								"text": "var(--wp--preset--color--secondary)"
+								"text": "var(--wp--preset--color--secondary-darker)"
 							},
 							"typography": {
 								"textDecoration": "none"
@@ -443,8 +508,8 @@
 				"elements": {
 					"heading": {
 						"color": {
-							"background": "var(--wp--preset--color--primary)",
-							"text": "var(--wp--preset--color--background)"
+							"background": "var(--wp--preset--color--primary-dark)",
+							"text": "var(--wp--preset--color--base)"
 						}
 					}
 				}
@@ -534,7 +599,7 @@
 				"elements": {
 					"link": {
 						"color": {
-							"text": "var(--wp--preset--color--secondary)"
+							"text": "var(--wp--preset--color--tertiary-dark)"
 						}
 					}
 				}
@@ -593,8 +658,8 @@
 					}
 				},
 				"color": {
-					"text": "var(--wp--preset--color--primary)",
-					"background": "var(--wp--preset--color--white)"
+					"text": "var(--wp--preset--color--primary-dark)",
+					"background": "var(--wp--preset--color--base)"
 				},
 				"typography": {
 					"fontFamily": "var(--wp--preset--font-family--heading-font)",
@@ -615,7 +680,7 @@
 						},
 						":active": {
 							"color": {
-								"text": "var(--wp--preset--color--secondary)"
+								"text": "var(--wp--preset--color--tertiary-darker)"
 							},
 							"typography": {
 								"textDecoration": "none"
@@ -713,8 +778,8 @@
 						},
 						":active": {
 							"color": {
-								"text": "var(--wp--preset--color--secondary)",
-								"background": "var(--wp--preset--color--background)"
+								"text": "var(--wp--preset--color--tertiary-darker)",
+								"background": "var(--wp--preset--color--base)"
 							},
 							"typography": {
 								"textDecoration": "none"
@@ -726,8 +791,8 @@
 					}
 				},
 				"color": {
-					"text": "var(--wp--preset--color--primary)",
-					"background": "var(--wp--preset--color--background)"
+					"text": "var(--wp--preset--color--primary-dark)",
+					"background": "var(--wp--preset--color--base)"
 				},
 				"typography": {
 						"fontFamily": "var(--wp--preset--font-family--heading-font)",
@@ -743,38 +808,38 @@
 					"radius": "0"
 				},
 				"color": {
-					"background": "var(--wp--preset--color--primary)",
-					"text": "var(--wp--preset--color--white)"
+					"background": "var(--wp--preset--color--primary-dark)",
+					"text": "var(--wp--preset--color--base)"
 				},
 				":hover": {
 					"color": {
-						"background": "var(--wp--preset--color--white)",
-						"text": "var(--wp--preset--color--primary)"
+						"background": "var(--wp--preset--color--base)",
+						"text": "var(--wp--preset--color--primary-dark)"
 					}
 				},
 				":focus": {
 					"color": {
-						"background": "var(--wp--preset--color--secondary)",
-						"text": "var(--wp--preset--color--white)"
+						"background": "var(--wp--preset--color--secondary-dark)",
+						"text": "var(--wp--preset--color--base)"
 					}
 				},
 				":active": {
 					"color": {
-						"background": "var(--wp--preset--color--tertiary)",
-						"text": "var(--wp--preset--color--white)"
+						"background": "var(--wp--preset--color--tertiary-dark)",
+						"text": "var(--wp--preset--color--base)"
 					}
 				},
 				":visited": {
 					"color": {
-						"background": "var(--wp--preset--color--secondary)",
-						"text": "var(--wp--preset--color--white)"
+						"background": "var(--wp--preset--color--secondary-dark)",
+						"text": "var(--wp--preset--color--base)"
 					}
 				}
 			},
 			"heading": {
 				"color": {
-						"text": "var(--wp--preset--color--secondary)",
-						"background": "var(--wp--preset--color--background)"
+						"text": "var(--wp--preset--color--primary-dark)",
+						"background": "var(--wp--preset--color--base)"
 					},
 				"typography": {
 					"fontWeight": "600",
@@ -826,11 +891,12 @@
 			},
 			"link": {
 				"color": {
-					"text": "var(--wp--preset--color--contrast)"
+					"text": "var(--wp--preset--color--tertiary-dark)"
 				},
 				":hover": {
-					"typography": {
-						"textDecoration": "none"
+					"color": {
+						"text": "var(--wp--preset--color--tertiary-dark)",
+						"background": "var(--wp--preset--color--base)"
 					}
 				},
 				":focus": {
@@ -840,7 +906,7 @@
 				},
 				":active": {
 					"color": {
-						"text": "var(--wp--preset--color--secondary)"
+						"text": "var(--wp--preset--color--tertiary-darker)"
 					},
 					"typography": {
 						"textDecoration": "none"
