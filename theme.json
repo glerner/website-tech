@@ -54,25 +54,111 @@
 			"defaultDuotone": false,
 			"defaultGradients": false,
 			"palette": [
-				{ "slug": "base", "color": "#A09A91", "name": "Background - Espresso Blend" },
-				{ "slug": "contrast", "color": "#000000", "name": "Contrast - Black" },
-				{ "slug": "primary-lighter", "color": "#A09A91", "name": "Primary Lighter - Espresso Blend" },
-				{ "slug": "primary-light", "color": "#8C8379", "name": "Primary Light - Espresso Blend" },
-				{ "slug": "primary-dark", "color": "#443D36", "name": "Primary Dark - Espresso Blend" },
-				{ "slug": "primary-darker", "color": "#2E2923", "name": "Primary Darker - Espresso Blend" },
-				{ "slug": "secondary-lighter", "color": "#B6AEA4", "name": "Secondary Lighter - Warm Taupe" },
-				{ "slug": "secondary-light", "color": "#A19A90", "name": "Secondary Light - Warm Taupe" },
-				{ "slug": "secondary-dark", "color": "#625C54", "name": "Secondary Dark - Warm Taupe" },
-				{ "slug": "secondary-darker", "color": "#4A433E", "name": "Secondary Darker - Warm Taupe" },
-				{ "slug": "tertiary-lighter", "color": "#DED9D0", "name": "Tertiary Lighter - Vintage Linen" },
-				{ "slug": "tertiary-light", "color": "#D0CBC2", "name": "Tertiary Light - Vintage Linen" },
-				{ "slug": "tertiary-dark", "color": "#918B80", "name": "Tertiary Dark - Vintage Linen" },
-				{ "slug": "tertiary-darker", "color": "#7D776C", "name": "Tertiary Darker - Vintage Linen" },
-				{ "slug": "accent-light", "color": "#8CD3CD", "name": "Accent Lighter - Lush Teal" },
-				{ "slug": "accent-dark", "color": "#1D6660", "name": "Accent Darker - Lush Teal" },
-				{ "slug": "primary", "color": "#63554A", "name": "Primary - Espresso Blend" },
-				{ "slug": "secondary", "color": "#887D72", "name": "Secondary - Warm Taupe" },
-				{ "slug": "tertiary", "color": "#BFBAA5", "name": "Tertiary - Vintage Linen" },
+                {
+                    "slug": "base",
+                    "color": "#F3CC9A",
+                    "name": "Base - Approachable Amber Lighter"
+                },
+                {
+                    "slug": "contrast",
+                    "color": "#000000",
+                    "name": "Contrast - Black"
+                },
+                {
+                    "slug": "primary-lighter",
+                    "color": "#A0B7CD",
+                    "name": "Primary Lighter - Calm Cerulean"
+                },
+                {
+                    "slug": "primary-light",
+                    "color": "#7593B1",
+                    "name": "Primary Light - Calm Cerulean"
+                },
+                {
+                    "slug": "primary-dark",
+                    "color": "#3A5C7D",
+                    "name": "Primary Dark - Calm Cerulean"
+                },
+                {
+                    "slug": "primary-darker",
+                    "color": "#284568",
+                    "name": "Primary Darker - Calm Cerulean"
+                },
+                {
+                    "slug": "secondary-lighter",
+                    "color": "#F3CC9A",
+                    "name": "Secondary Lighter - Approachable Amber"
+                },
+                {
+                    "slug": "secondary-light",
+                    "color": "#E8BD82",
+                    "name": "Secondary Light - Approachable Amber"
+                },
+                {
+                    "slug": "secondary-dark",
+                    "color": "#B68350",
+                    "name": "Secondary Dark - Approachable Amber"
+                },
+                {
+                    "slug": "secondary-darker",
+                    "color": "#8F5E31",
+                    "name": "Secondary Darker - Approachable Amber"
+                },
+                {
+                    "slug": "tertiary-lighter",
+                    "color": "#B8CCAA",
+                    "name": "Tertiary Lighter - Sage Serenity"
+                },
+                {
+                    "slug": "tertiary-light",
+                    "color": "#A0B797",
+                    "name": "Tertiary Light - Sage Serenity"
+                },
+                {
+                    "slug": "tertiary-dark",
+                    "color": "#67825F",
+                    "name": "Tertiary Dark - Sage Serenity"
+                },
+                {
+                    "slug": "tertiary-darker",
+                    "color": "#47603D",
+                    "name": "Tertiary Darker - Sage Serenity"
+                },
+                {
+                    "slug": "accent-lighter",
+                    "color": "#C49BB0",
+                    "name": "Accent Lighter - Passionate Plum"
+                },
+                {
+                    "slug": "accent-light",
+                    "color": "#945276",
+                    "name": "Accent Light - Passionate Plum"
+                },
+                {
+                    "slug": "accent-dark",
+                    "color": "#6B3D63",
+                    "name": "Accent Dark - Passionate Plum"
+                },
+                {
+                    "slug": "accent-darker",
+                    "color": "#5B2F52",
+                    "name": "Accent Darker - Passionate Plum"
+                },
+                {
+                    "slug": "primary",
+                    "color": "#517FA4",
+                    "name": "Primary - Calm Cerulean"
+                },
+                {
+                    "slug": "secondary",
+                    "color": "#DAA464",
+                    "name": "Secondary - Approachable Amber"
+                },
+                {
+                    "slug": "tertiary",
+                    "color": "#89A77F",
+                    "name": "Tertiary - Sage Serenity"
+                },
 			    {
 					"slug": "highlight1",
 					"color": "#F9FE88",
@@ -546,7 +632,7 @@
 				"elements": {
 					"link": {
 						"color": {
-							"text": "var(--wp--preset--color--tertiary-dark)"
+							"text": "var(--wp--preset--color--accent-dark)"
 						}
 					}
 				}
@@ -627,7 +713,7 @@
 						},
 						":active": {
 							"color": {
-								"text": "var(--wp--preset--color--tertiary-darker)"
+								"text": "var(--wp--preset--color--transparent)"
 							},
 							"typography": {
 								"textDecoration": "none"
@@ -764,19 +850,19 @@
 				},
 				":focus": {
 					"color": {
-						"background": "var(--wp--preset--color--secondary-dark)",
+						"background": "var(--wp--preset--color--tertiary-dark)",
 						"text": "var(--wp--preset--color--white)"
 					}
 				},
 				":active": {
 					"color": {
-						"background": "var(--wp--preset--color--tertiary-dark)",
+						"background": "var(--wp--preset--color--accent-dark)",
 						"text": "var(--wp--preset--color--white)"
 					}
 				},
 				":visited": {
 					"color": {
-						"background": "var(--wp--preset--color--secondary-dark)",
+						"background": "var(--wp--preset--color--tertiary-dark)",
 						"text": "var(--wp--preset--color--white)"
 					}
 				}
@@ -852,7 +938,7 @@
 				},
 				":active": {
 					"color": {
-						"text": "var(--wp--preset--color--tertiary-darker)"
+						"text": "var(--wp--preset--color--accent-darker)"
 					},
 					"typography": {
 						"textDecoration": "none"
