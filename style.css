@@ -7,7 +7,7 @@ Description: Website Tech is a Twenty Twenty-Three child
 Requires at least: 6.1
 Tested up to: 6.2.2
 Requires PHP: 7.2
-Version: 1.0
+Version: 1.01
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 Text Domain: website-tech
@@ -30,6 +30,24 @@ from https://equalizedigital.com/accessibility-checker/empty-link/ */
    height:1px;
    overflow:hidden;
 }
+
+/* Menus */
+.wp-block-navigation a:where(:not(.wp-element-button)) {
+    background-color: var(--wp--preset--color--accent-dark);
+    color: var(--wp--preset--color--white);
+    text-decoration: none;
+    padding: 5px;
+}
+a:where(:not(.wp-element-button)):hover {
+    background-color: var(--wp--preset--color--accent-dark);
+    color: var(--wp--preset--color--base);
+    text-decoration: none;
+}
+.wp-block-navigation .wp-block-navigation-item__content.wp-block-navigation-item__content:hover {
+    /* color: inherit; */
+    color: var(--wp--preset--color--accent-dark);
+}
+
 
 /* styling for WS Form */
 .wsf-field, input[type="checkbox"].wsf-field + label.wsf-label, input[type="checkbox"].wsf-field + label.wsf-label::before {
@@ -56,7 +74,7 @@ a, .elementor a:where(:not(.wp-element-button)) {
     text-decoration: underline;
     text-decoration-thickness: .15em;  /* .25rem all the same thickness made too thick for tiny text */
     text-underline-offset: .25em;		/* em so offset on large fonts clears descenders */
-    color: var(--wp--preset--color--complementary-dark);
+    color: var(--wp--preset--color--accent-dark);
     word-wrap: break-word;
     overflow-wrap: break-word;
     word-break: break-word;
@@ -82,3 +100,13 @@ a:hover {
     background-color: var(--wp--preset--color--base);
     padding: 2px;
 }
+
+/* Header styles */
+/** Navigation block, see theme.json core/navigation.elements.link */
+/*
+span.wp-block-navigation-item__label {
+    background: rebeccapurple;
+}
+*/
+
+/* Footer styles */
