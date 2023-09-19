@@ -54,102 +54,26 @@
 			"defaultDuotone": false,
 			"defaultGradients": false,
 			"palette": [
-				{
-					"slug": "base",
-					"color": "#D9D4C3",
-					"name": "Soft Papyrus"
-				  },
-				  {
-					"slug": "contrast",
-					"color": "#000000",
-					"name": "Black"
-				  },
-				  {
-					"slug": "primary-lighter",
-					"color": "#A89982",
-					"name": "Primary Rich Espresso Lighter"
-				  },
-				  {
-					"slug": "primary-light",
-					"color": "#8F7D6D",
-					"name": "Primary Rich Espresso Light"
-				  },
-				  {
-					"slug": "primary-dark",
-					"color": "#3E291B",
-					"name": "Primary Rich Espresso Dark"
-				  },
-				  {
-					"slug": "primary-darker",
-					"color": "#2F1E0F",
-					"name": "Primary Rich Espresso Darker"
-				  },
-				  {
-					"slug": "secondary-lighter",
-					"color": "#EDE9E0",
-					"name": "Secondary Soft Papyrus Lighter"
-				  },
-				  {
-					"slug": "secondary-light",
-					"color": "#E3DEC9",
-					"name": "Secondary Soft Papyrus Light"
-				  },
-				  {
-					"slug": "secondary-dark",
-					"color": "#AFAA96",
-					"name": "Secondary Soft Papyrus Dark"
-				  },
-				  {
-					"slug": "secondary-darker",
-					"color": "#9C927D",
-					"name": "Secondary Soft Papyrus Darker"
-				  },
-				  {
-					"slug": "tertiary-lighter",
-					"color": "#8B6D58",
-					"name": "Tertiary Dark Mocha Lighter"
-				  },
-				  {
-					"slug": "tertiary-light",
-					"color": "#7C614F",
-					"name": "Tertiary Dark Mocha Light"
-				  },
-				  {
-					"slug": "tertiary-dark",
-					"color": "#2F220F",
-					"name": "Tertiary Dark Mocha Dark"
-				  },
-				  {
-					"slug": "tertiary-darker",
-					"color": "#211907",
-					"name": "Tertiary Dark Mocha Darker"
-				  },
-				  {
-					"slug": "accent-light",
-					"color": "#8BD2CE",
-					"name": "Accent Vibrant Teal light"
-				  },
-				  {
-					"slug": "accent-dark",
-					"color": "#175E59",
-					"name": "Accent Vibrant Teal dark"
-				  },
-				  {
-					"slug": "primary",
-					"color": "#5A3D24",
-					"name": "Primary Rich Espresso"
-				  },
-				  {
-					"slug": "secondary",
-					"color": "#D9D4C3",
-					"name": "Secondary Soft Papyrus"
-				  },
-				  {
-					"slug": "tertiary",
-					"color": "#493619",
-					"name": "Tertiary Dark Mocha"
-				  },
-				  {
+				{ "slug": "base", "color": "#A09A91", "name": "Background - Espresso Blend" },
+				{ "slug": "contrast", "color": "#000000", "name": "Contrast - Black" },
+				{ "slug": "primary-lighter", "color": "#A09A91", "name": "Primary Lighter - Espresso Blend" },
+				{ "slug": "primary-light", "color": "#8C8379", "name": "Primary Light - Espresso Blend" },
+				{ "slug": "primary-dark", "color": "#443D36", "name": "Primary Dark - Espresso Blend" },
+				{ "slug": "primary-darker", "color": "#2E2923", "name": "Primary Darker - Espresso Blend" },
+				{ "slug": "secondary-lighter", "color": "#B6AEA4", "name": "Secondary Lighter - Warm Taupe" },
+				{ "slug": "secondary-light", "color": "#A19A90", "name": "Secondary Light - Warm Taupe" },
+				{ "slug": "secondary-dark", "color": "#625C54", "name": "Secondary Dark - Warm Taupe" },
+				{ "slug": "secondary-darker", "color": "#4A433E", "name": "Secondary Darker - Warm Taupe" },
+				{ "slug": "tertiary-lighter", "color": "#DED9D0", "name": "Tertiary Lighter - Vintage Linen" },
+				{ "slug": "tertiary-light", "color": "#D0CBC2", "name": "Tertiary Light - Vintage Linen" },
+				{ "slug": "tertiary-dark", "color": "#918B80", "name": "Tertiary Dark - Vintage Linen" },
+				{ "slug": "tertiary-darker", "color": "#7D776C", "name": "Tertiary Darker - Vintage Linen" },
+				{ "slug": "accent-light", "color": "#8CD3CD", "name": "Accent Lighter - Lush Teal" },
+				{ "slug": "accent-dark", "color": "#1D6660", "name": "Accent Darker - Lush Teal" },
+				{ "slug": "primary", "color": "#63554A", "name": "Primary - Espresso Blend" },
+				{ "slug": "secondary", "color": "#887D72", "name": "Secondary - Warm Taupe" },
+				{ "slug": "tertiary", "color": "#BFBAA5", "name": "Tertiary - Vintage Linen" },
+			    {
 					"slug": "highlight1",
 					"color": "#F9FE88",
 					"name": "Highlight 1"
@@ -386,7 +310,7 @@
 			],
             "fontSizes": [
                 {
-                    "size": "0.875rem",
+                    "size": "1rem",
                     "fluid": {
                         "min": "0.875rem",
                         "max": "1rem"
@@ -395,10 +319,10 @@
                     "name": "Small"
                 },
                 {
-                    "size": "1rem",
+                    "size": "1.5rem",
                     "fluid": {
                         "min": "1rem",
-                        "max": "1.25rem"
+                        "max": "2rem"
                     },
                     "slug": "medium",
                     "name": "Medium"
@@ -406,7 +330,7 @@
                 {
                     "size": "2rem",
                     "fluid": {
-                        "min": "1.25rem",
+                        "min": "1.5rem",
                         "max": "2.5rem"
                     },
                     "slug": "large",
