@@ -632,7 +632,27 @@
 				"elements": {
 					"link": {
 						"color": {
-							"text": "var(--wp--preset--color--accent-dark)"
+							"text": "var(--wp--preset--color--accent-dark)",
+							"background": "var(--wp--preset--color--base)"
+						},
+						":hover": {
+							"color": {
+								"text": "var(--wp--preset--color--base)",
+								"background": "var(--wp--preset--color--accent-dark)"
+							}
+						},
+						":focus": {
+							"typography": {
+								"textDecoration": "underline dashed"
+							}
+						},
+						":active": {
+							"color": {
+								"text": "var(--wp--preset--color--accent-darker)"
+							},
+							"typography": {
+								"textDecoration": "none"
+							}
 						}
 					}
 				}
