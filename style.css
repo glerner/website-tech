@@ -112,6 +112,15 @@ a:hover {
     background-color: var(--wp--preset--color--base);
     padding: 2px;
 }
+img.edit-site-site-icon__image {
+    padding: 3px 5px;
+    width: 95%;
+}
+.edit-site-site-hub__view-mode-toggle-container, .edit-site-site-icon__image {
+    background-color: var(--wp--preset--color--primary-light);
+    color: var(--wp--preset--color--primary-dark);
+}
+
 
 /* Header styles */
 /** Navigation block, see theme.json core/navigation.elements.link */
