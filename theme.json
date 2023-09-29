@@ -405,7 +405,7 @@
                     "name": "Small"
                 },
                 {
-                    "size": "1.5rem",
+                    "size": "1.2rem",
                     "fluid": {
                         "min": "1rem",
                         "max": "2rem"
@@ -416,7 +416,7 @@
                 {
                     "size": "2rem",
                     "fluid": {
-                        "min": "1.5rem",
+                        "min": "1.2rem",
                         "max": "2.5rem"
                     },
                     "slug": "large",
@@ -533,8 +533,8 @@
 				"elements": {
 					"heading": {
 						"color": {
-							"background": "var(--wp--preset--color--primary-dark)",
-							"text": "var(--wp--preset--color--base)"
+							"background": "var(--wp--preset--color--base)",
+							"text": "var(--wp--preset--color--black)"
 						}
 					}
 				}
@@ -889,7 +889,7 @@
 			},
 			"heading": {
 				"color": {
-						"text": "var(--wp--preset--color--primary-dark)",
+						"text": "var(--wp--preset--color--black)",
 						"background": "var(--wp--preset--color--base)"
 					},
 				"typography": {
