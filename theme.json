@@ -711,7 +711,7 @@
 					}
 				},
 				"color": {
-					"text": "var(--wp--preset--color--primary-dark)",
+					"text": "var(--wp--preset--color--black)",
 					"background": "var(--wp--preset--color--base)"
 				},
 				"typography": {

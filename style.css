@@ -103,10 +103,12 @@ a:hover {
 
 
 /* size and background for site logo */
-.edit-post-fullscreen-mode-close.components-button {
+/* .edit-post-fullscreen-mode-close.components-button */
+.components-button {
     background-color: var(--wp--preset--color--base);
 }
-.edit-post-fullscreen-mode-close.components-button .edit-post-fullscreen-mode-close_site-icon {
+/* .edit-post-fullscreen-mode-close.components-button .edit-post-fullscreen-mode-close_site-icon */
+.components-button .edit-post-fullscreen-mode-close_site-icon {
     border-radius: 2px;
     height: 45px;
     margin-top: 0;
@@ -114,7 +116,8 @@ a:hover {
     width: 45px;
         padding: 2px;
 }
-.edit-post-fullscreen-mode-close.components-button:before {
+/* .edit-post-fullscreen-mode-close.components-button:before */
+.components-button:before {
     border-radius: 4px;
     /* box-shadow: inset 0 0 0 var(--wp-admin-border-width-focus) #1e1e1e; */
     box-shadow: none;
