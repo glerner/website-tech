@@ -104,41 +104,20 @@ a:hover {
 
 /* size and background for site logo */
 /* .edit-post-fullscreen-mode-close.components-button */
-.components-button {
-    background-color: var(--wp--preset--color--base);
+div.interface-navigable-region.interface-interface-skeleton__header div.edit-post-header div div a,
+div.interface-navigable-region.interface-interface-skeleton__header div.edit-post-header div div a img {
+    background-color: var(--wp--preset--color--tertiary-lighter);
+    object-fit: contain;
 }
-/* .edit-post-fullscreen-mode-close.components-button .edit-post-fullscreen-mode-close_site-icon */
-.components-button .edit-post-fullscreen-mode-close_site-icon {
+.edit-post-fullscreen-mode-close.components-button .edit-post-fullscreen-mode-close_site-icon.components-button .edit-post-fullscreen-mode-close_site-icon {
     border-radius: 2px;
     height: 45px;
     margin-top: 0;
-    object-fit: contain;
     width: 45px;
-        padding: 2px;
-}
-/* .edit-post-fullscreen-mode-close.components-button:before */
-.components-button:before {
-    border-radius: 4px;
-    /* box-shadow: inset 0 0 0 var(--wp-admin-border-width-focus) #1e1e1e; */
-    box-shadow: none;
-    transition: none;
-}
-img.edit-site-site-icon__image {
-    padding: 3px 5px;
-    width: 95%;
-}
-.edit-site-site-hub__view-mode-toggle-container, .edit-site-site-icon__image {
-    background-color: var(--wp--preset--color--primary-light);
-    color: var(--wp--preset--color--primary-dark);
+    padding: 2px;
 }
 
 
 /* Header styles */
-/** Navigation block, see theme.json core/navigation.elements.link */
-/*
-span.wp-block-navigation-item__label {
-    background: rebeccapurple;
-}
-*/
 
 /* Footer styles */
