@@ -107,7 +107,7 @@ a:hover {
 div.interface-navigable-region.interface-interface-skeleton__header div.edit-post-header div div a,
 div.interface-navigable-region.interface-interface-skeleton__header div.edit-post-header div div a img {
     background-color: var(--wp--preset--color--tertiary-lighter);
-    object-fit: contain;
+    object-fit: contain !important;
 }
 .edit-post-fullscreen-mode-close.components-button .edit-post-fullscreen-mode-close_site-icon.components-button .edit-post-fullscreen-mode-close_site-icon {
     border-radius: 2px;
@@ -115,6 +115,9 @@ div.interface-navigable-region.interface-interface-skeleton__header div.edit-pos
     margin-top: 0;
     width: 45px;
     padding: 2px;
+}
+.edit-site-site-hub__view-mode-toggle-container {
+    background-color: orange !important;
 }
 
 
