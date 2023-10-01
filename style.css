@@ -102,23 +102,10 @@ a:hover {
 }
 
 
-/* size and background for site logo */
-/* .edit-post-fullscreen-mode-close.components-button */
-div.interface-navigable-region.interface-interface-skeleton__header div.edit-post-header div div a,
-div.interface-navigable-region.interface-interface-skeleton__header div.edit-post-header div div a img {
-    background-color: var(--wp--preset--color--tertiary-lighter);
-    object-fit: contain !important;
-}
-.edit-post-fullscreen-mode-close.components-button .edit-post-fullscreen-mode-close_site-icon.components-button .edit-post-fullscreen-mode-close_site-icon {
-    border-radius: 2px;
-    height: 45px;
-    margin-top: 0;
-    width: 45px;
-    padding: 2px;
-}
-.edit-site-site-hub__view-mode-toggle-container {
-    background-color: orange !important;
-}
+/* size and background for site logo
+* this is set in  wp-includes/css/dist/edit-site/style.css and no way to override it
+* so, use a site logo with a background color in the image
+*/
 
 
 /* Header styles */
