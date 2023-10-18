@@ -59,7 +59,16 @@ a:where(:not(.wp-element-button, .uagb-button__wrapper)):hover {
     text-decoration: none;
     padding: 5px;
 }
-
+.wp-block-navigation__responsive-container .wp-block-navigation-link a {
+    /* undo /wp-includes/blocks/navigation/style.min.css color: inherit; */
+    background-color: var(--wp--preset--color--accent-dark);
+    color: var(--wp--preset--color--white);
+}
+.wp-block-navigation .wp-block-navigation-item__content.wp-block-navigation-item__content {
+    /* undo /wp-includes/blocks/navigation/style.min.css color: inherit; */
+    background-color: var(--wp--preset--color--accent-dark);
+    color: var(--wp--preset--color--white);
+}
 
 /* styling for WS Form */
 .wsf-field, input[type="checkbox"].wsf-field + label.wsf-label, input[type="checkbox"].wsf-field + label.wsf-label::before {
@@ -106,6 +115,17 @@ a:hover {
 * this is set in  wp-includes/css/dist/edit-site/style.css and no way to override it
 * so, use a site logo with a background color in the image
 */
+
+/* Spectra (formerly Ultimate Add-ons for Gutenberg) */
+
+/* UAGB block quote */
+.wp-block-uagb-blockquote.uagb-blockquote__skin-border blockquote.uagb-blockquote {
+    /* .uagb-block-b0271a66.uagb-blockquote__skin-border blockquote.uagb-blockquote */
+    border-color: var(--wp--preset--color--tertiary-darker);
+}
+.wp-block-uagb-blockquote cite.uagb-blockquote__author {
+    color: var(--wp--preset--color--tertiary-darker);
+}
 
 
 /* Header styles */
