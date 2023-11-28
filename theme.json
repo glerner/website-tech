@@ -225,72 +225,72 @@
 			"gradients": [
 				{
 					"slug": "vertical-secondary-to-tertiary",
-					"gradient": "linear-gradient(to bottom,var(--wp--preset--color--secondary-dark) 0%,var(--wp--preset--color--tertiary-dark) 100%)",
+					"gradient": "linear-gradient(to bottom,var(--wp--preset--color--secondary-light) 0%,var(--wp--preset--color--tertiary-light) 100%)",
 					"name": "Vertical secondary to tertiary"
 				},
 				{
 					"slug": "vertical-secondary-to-background",
-					"gradient": "linear-gradient(to bottom,var(--wp--preset--color--secondary-dark) 0%,var(--wp--preset--color--base) 100%)",
+					"gradient": "linear-gradient(to bottom,var(--wp--preset--color--secondary-light) 0%,var(--wp--preset--color--base) 100%)",
 					"name": "Vertical secondary to background"
 				},
 				{
 					"slug": "vertical-tertiary-to-background",
-					"gradient": "linear-gradient(to bottom,var(--wp--preset--color--tertiary-dark) 0%,var(--wp--preset--color--base) 100%)",
+					"gradient": "linear-gradient(to bottom,var(--wp--preset--color--tertiary-light) 0%,var(--wp--preset--color--base) 100%)",
 					"name": "Vertical tertiary to background"
 				},
 				{
-					"slug": "diagonal-primary-to-foreground",
-					"gradient": "linear-gradient(to bottom right,var(--wp--preset--color--primary-dark) 0%,var(--wp--preset--color--foreground) 100%)",
-					"name": "Diagonal primary to foreground"
-				},
-				{
 					"slug": "diagonal-secondary-to-background",
-					"gradient": "linear-gradient(to bottom right,var(--wp--preset--color--secondary-dark) 50%,var(--wp--preset--color--base) 50%)",
+					"gradient": "linear-gradient(to bottom right,var(--wp--preset--color--secondary-lighter) 50%,var(--wp--preset--color--base) 100%)",
 					"name": "Diagonal secondary to background"
 				},
 				{
 					"slug": "diagonal-background-to-secondary",
-					"gradient": "linear-gradient(to bottom right,var(--wp--preset--color--base) 50%,var(--wp--preset--color--secondary-dark) 50%)",
+					"gradient": "linear-gradient(to bottom right,var(--wp--preset--color--base) 50%,var(--wp--preset--color--secondary-light) 100%)",
 					"name": "Diagonal background to secondary"
 				},
 				{
 					"slug": "diagonal-tertiary-to-background",
-					"gradient": "linear-gradient(to bottom right,var(--wp--preset--color--tertiary-dark) 50%,var(--wp--preset--color--base) 50%)",
+					"gradient": "linear-gradient(to bottom right,var(--wp--preset--color--tertiary-light) 50%,var(--wp--preset--color--base) 100%)",
 					"name": "Diagonal tertiary to background"
 				},
 				{
 					"slug": "diagonal-background-to-tertiary",
-					"gradient": "linear-gradient(to bottom right,var(--wp--preset--color--base) 50%,var(--wp--preset--color--tertiary-dark) 50%)",
+					"gradient": "linear-gradient(to bottom right,var(--wp--preset--color--base) 50%,var(--wp--preset--color--tertiary-light) 100%)",
 					"name": "Diagonal background to tertiary"
 				},
 				{
 					"slug": "d-transparent-primary",
-					"gradient": "linear-gradient(to bottom right,transparent 49.9%,#5093D4 50%)",
+					"gradient": "linear-gradient(to bottom right,transparent 49.9%,var(--wp--preset--color--primary-light) 100%)",
 					"name": "Diagonal transparent to primary"
 				},
 				{
 					"slug": "d-primary-transparent",
-					"gradient": "linear-gradient(to bottom right, #5093D4 49.9%, transparent 50%)",
+					"gradient": "linear-gradient(to bottom right, var(--wp--preset--color--primary-lighter) 30%, transparent 100%)",
 					"name": "Diagonal primary to transparent"
 				},
 				{
+					"slug": "d-secondary-transparent",
+					"gradient": "linear-gradient(to bottom right, var(--wp--preset--color--secondary-lighter) 30%, transparent 100%)",
+					"name": "Diagonal secondary to transparent"
+				},
+				{
 					"slug": "d-white-primary",
-					"gradient": "linear-gradient(to bottom right,#fff 49.9%,#5093D4 50%)",
+					"gradient": "linear-gradient(to bottom right,#fff 30%,var(--wp--preset--color--primary-light) 100%)",
 					"name": "Diagonal white to primary"
 				},
 				{
 					"slug": "d-primary-white",
-					"gradient": "linear-gradient(to bottom right,#5093D4 49.9%,#fff 50%)",
+					"gradient": "linear-gradient(to bottom right,var(--wp--preset--color--primary-light) 49.9%,#fff 100%)",
 					"name": "Diagonal primary to white"
 				},
 				{
 					"slug": "h-primary-white",
-					"gradient": "linear-gradient(#5093D4 49.9%,#fff 50%)",
+					"gradient": "linear-gradient(var(--wp--preset--color--primary-lighter) 49.9%,#fff 100%)",
 					"name": "Horizontal primary to white"
 				},
 				{
 					"slug": "h-white-primary",
-					"gradient": "linear-gradient(#fff 49.9%,#5093D4 50%)",
+					"gradient": "linear-gradient(#fff 49.9%,var(--wp--preset--color--primary-light) 100%)",
 					"name": "Horizontal white to primary"
 				}
 			]

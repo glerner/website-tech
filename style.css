@@ -70,6 +70,33 @@ a:where(:not(.wp-element-button, .uagb-button__wrapper)):hover {
     color: var(--wp--preset--color--white);
 }
 
+/* <details> accordion - Quick Reminder that Details/Summary is the Easiest Way Ever to Make an Accordion | CSS-Tricks https://css-tricks.com/quick-reminder-that-details-summary-is-the-easiest-way-ever-to-make-an-accordion/
+and improved https://codepen.io/thomashigginbotham/pen/aYqvqQ?editors=1100
+
+<details>
+  <summary>What's a Po' Boy?</summary>
+  A po' boy (also po-boy, po boy) is a traditional sandwich from Louisiana. It almost always consists of meat, which is usually roast beef or fried seafood, often shrimp, crawfish, fish, oysters or crab.
+</details>
+*/
+
+details {
+    margin: 1rem;
+}
+summary {
+    font-weight: bold;
+    list-style-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/right-arrow.svg);
+  }
+    details[open] summary {
+    list-style-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/down-arrow.svg);
+}
+summary::-webkit-details-marker {
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/right-arrow.svg);
+    color: transparent;
+}
+    details[open] summary::-webkit-details-marker {
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/down-arrow.svg);
+}
+
 /* styling for WS Form */
 .wsf-field, input[type="checkbox"].wsf-field + label.wsf-label, input[type="checkbox"].wsf-field + label.wsf-label::before {
 	color: var(--wp--preset--color--foreground);
@@ -118,7 +145,13 @@ a:hover {
 
 /* Spectra (formerly Ultimate Add-ons for Gutenberg) */
 
-/* UAGB block quote */
+/* Spectra highlight color, in the "Highlight" icon of the block's toolbar */
+.uagb-highlight {
+    background-color: var(--wp--preset--color--highlight1);
+    color: var(--wp--preset--color--black);
+}
+
+/* Spectra block quote */
 .wp-block-uagb-blockquote.uagb-blockquote__skin-border blockquote.uagb-blockquote {
     /* .uagb-block-b0271a66.uagb-blockquote__skin-border blockquote.uagb-blockquote */
     border-color: var(--wp--preset--color--tertiary-darker);
@@ -127,6 +160,42 @@ a:hover {
     color: var(--wp--preset--color--tertiary-darker);
 }
 
+/* Spectra Cover block */
+/* .wp-block-uagb-advanced-heading p.uagb-desc-text.rich-text, .wp-block-uagb-advanced-heading h2.uagb-heading-text { */
+.block-color-primarylight {
+    background-color: var(--wp--preset--color--primary-lighter);
+    color: var(--wp--preset--color--black);
+}
+
+/* Spectra Post Grid */
+.uagb-post__cta {   /* Read More link */
+    float: right;
+    margin-bottom:15px;
+}
+
+/* from Responsive flexbox tables, by David Miller https://codepen.io/Orangetronic/pen/pJgpXw
+*/
+table.table { width: 100%; }
+.table th, .table td {
+  text-align: left;
+  padding: 0.25em;
+}
+.table tr {
+  border-bottom: 1px solid #DDD;
+}
+@media screen and (max-width: 800px) {
+  tr {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0.5em 0;
+    border: 1px solid rgba(3,3,3,0.2);
+  }
+  td, th {
+    flex: 1 1 250px;
+    border: 0.5px solid rgba(3,3,3,0.2);
+  }
+}
 
 /* Header styles */
 
