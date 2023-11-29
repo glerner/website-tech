@@ -955,13 +955,13 @@
 			},
 			"link": {
 				"color": {
-					"text": "var(--wp--preset--color--accent-dark)",
-					"background": "var(--wp--preset--color--base)"
+					"text": "var:preset|color|accent-darker",
+					"background": "var:preset|color|tertiary-lighter"
 				},
 				":hover": {
 					"color": {
-						"text": "var(--wp--preset--color--base)",
-						"background": "var(--wp--preset--color--accent-dark)"
+						"text": "var:preset|color|tertiary-lighter",
+						"background": "var:preset|color|accent-darker"
 					}
 				},
 				":focus": {
