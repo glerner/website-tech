@@ -56,8 +56,8 @@
 			"palette": [
                 {
                     "slug": "base",
-                    "color": "#F3CC9A",
-                    "name": "Base - Approachable Amber Lighter"
+                    "color": "#517FA4",
+                    "name": "Base - Calm Cerulean"
                 },
                 {
                     "slug": "contrast",
@@ -197,32 +197,42 @@
 					"name": "Foreground and background"
 				},
 				{
-					"colors": [ "#000000", "#ffe2c7" ],
+					"colors": [ "#000000", "#F3CC9A" ],
 					"slug": "foreground-and-secondary",
 					"name": "Foreground and secondary"
 				},
 				{
-					"colors": [ "#000000", "#f6f6f6" ],
+					"colors": [ "#000000", "#B8CCAA" ],
 					"slug": "foreground-and-tertiary",
 					"name": "Foreground and tertiary"
 				},
 				{
-					"colors": [ "#1a4548", "#ffffff" ],
+					"colors": [ "#284568", "#ffffff" ],
 					"slug": "primary-and-background",
 					"name": "Primary and background"
 				},
 				{
-					"colors": [ "#1a4548", "#ffe2c7" ],
+					"colors": [ "#284568", "#F3CC9A" ],
 					"slug": "primary-and-secondary",
 					"name": "Primary and secondary"
 				},
 				{
-					"colors": [ "#1a4548", "#f6f6f6" ],
+					"colors": [ "#284568", "#B8CCAA" ],
 					"slug": "primary-and-tertiary",
 					"name": "Primary and tertiary"
 				}
 			],
 			"gradients": [
+				{
+					"slug": "vertical-primary-to-tertiary",
+					"gradient": "linear-gradient(to bottom,var(--wp--preset--color--primary-light) 0%,var(--wp--preset--color--tertiary-light) 100%)",
+					"name": "Vertical primary to tertiary"
+				},
+				{
+					"slug": "vertical-primary-to-background",
+					"gradient": "linear-gradient(to bottom,var(--wp--preset--color--primary-light) 0%,var(--wp--preset--color--base) 100%)",
+					"name": "Vertical primary to background"
+				},
 				{
 					"slug": "vertical-secondary-to-tertiary",
 					"gradient": "linear-gradient(to bottom,var(--wp--preset--color--secondary-light) 0%,var(--wp--preset--color--tertiary-light) 100%)",
