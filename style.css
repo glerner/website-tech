@@ -116,6 +116,28 @@ summary::-webkit-details-marker {
 }
 /* end WS Form */
 
+/* Login Form styling from https://developer.wordpress.org/news/2023/08/adding-and-using-custom-settings-in-theme-json/ */
+input:where( :not( [type=checkbox] ):not( [type=radio ] ) ),
+select,
+textarea {
+	color: var( --wp--custom--form-input--color, inherit );
+	background: var( --wp--custom--form-input--background, transparent );
+	border: 1px solid var( --wp--custom--form-input--border-color, currentColor );
+}
+.wp-block-loginout form {
+	display: grid;
+	grid-template-columns: repeat( 1, 1fr );
+	gap: var( --wp--style--block-gap );
+}
+.wp-block-loginout form > * {
+	margin: 0;
+}
+.wp-block-loginout form input:not([type=submit]):not([type=checkbox]):not([type=hidden]) {
+	box-sizing: border-box;
+	display: block;
+	width: 100%;
+}
+
 /* big CSS hover underline, thin un-hovered */
 a, .elementor a:where(:not(.wp-element-button, .uagb-button__wrapper)) {
     vertical-align: baseline;

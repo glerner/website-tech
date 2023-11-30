@@ -223,6 +223,36 @@
 				}
 			],
 			"gradients": [
+                {
+                    "name": "Calm Cerulean to Approachable Amber",
+                    "slug": "primary-gradient",
+                    "gradient": "linear-gradient(135deg, var(--wp--preset--color--primary), var(--wp--preset--color--secondary))"
+                },
+                {
+                    "name": "Approachable Amber to Sage Serenity",
+                    "slug": "secondary-gradient",
+                    "gradient": "linear-gradient(45deg, var(--wp--preset--color--secondary), var(--wp--preset--color--tertiary))"
+                },
+                {
+                    "name": "Calm Cerulean to Sage Serenity",
+                    "slug": "tertiary-gradient",
+                    "gradient": "linear-gradient(90deg, var(--wp--preset--color--primary), var(--wp--preset--color--tertiary))"
+                },
+                {
+                    "name": "Passionate Plum to Calm Cerulean",
+                    "slug": "accent-gradient",
+                    "gradient": "linear-gradient(135deg, var(--wp--preset--color--accent-darker), var(--wp--preset--color--primary))"
+                },
+                {
+                    "name": "Calm Cerulean-Approachable Amber-Sage Serenity",
+                    "slug": "primary-secondary-tertiary-gradient",
+                    "gradient": "linear-gradient(135deg, var(--wp--preset--color--primary), var(--wp--preset--color--secondary), var(--wp--preset--color--tertiary))"
+                },
+                {
+                    "name": "Sage Serenity-Passionate Plum-Calm Cerulean",
+                    "slug": "tertiary-accent-primary-gradient",
+                    "gradient": "linear-gradient(90deg, var(--wp--preset--color--tertiary), var(--wp--preset--color--accent-darker), var(--wp--preset--color--primary))"
+                },
 				{
 					"slug": "vertical-primary-to-tertiary",
 					"gradient": "linear-gradient(to bottom,var(--wp--preset--color--primary-light) 0%,var(--wp--preset--color--tertiary-light) 100%)",
@@ -442,6 +472,13 @@
                     "name": "Extra Large"
                 }
             ]
+		},
+		"custom": {
+			"formInput": {
+				"color": "#000000",
+				"background": "#f1f5f9",
+				"borderColor": "#e2e8f0"
+			}
 		}
 	},
 	"styles": {
@@ -546,7 +583,7 @@
 				"elements": {
 					"heading": {
 						"color": {
-							"background": "var(--wp--preset--color--base)",
+							"background": "var(--wp--preset--color--primary-lighter)",
 							"text": "var(--wp--preset--color--black)"
 						}
 					}
@@ -646,11 +683,11 @@
 					"link": {
 						"color": {
 							"text": "var(--wp--preset--color--accent-dark)",
-							"background": "var(--wp--preset--color--base)"
+							"background": "var(--wp--preset--color--tertiary-lighter)"
 						},
 						":hover": {
 							"color": {
-								"text": "var(--wp--preset--color--base)",
+								"text": "var(--wp--preset--color--tertiary-lighter)",
 								"background": "var(--wp--preset--color--accent-dark)"
 							}
 						},
@@ -725,12 +762,12 @@
 				},
 				"color": {
 					"text": "var(--wp--preset--color--black)",
-					"background": "var(--wp--preset--color--base)"
+					"background": "var(--wp--preset--color--primary-lighter)"
 				},
 				"typography": {
 					"fontFamily": "var(--wp--preset--font-family--heading-font)",
 					"fontWeight": "600",
-					"fontSize": "var(--wp--preset--font-size--x-large)"
+					"fontSize": "var:preset|font-size|x-large)"
 				},
 				"elements": {
 					"link": {
@@ -746,7 +783,7 @@
 						},
 						":active": {
 							"color": {
-								"text": "var(--wp--preset--color--transparent)"
+								"text": "var:preset|color|transparent)"
 							},
 							"typography": {
 								"textDecoration": "none"
@@ -919,12 +956,12 @@
 			},
 			"h1": {
 				"typography": {
-					"fontSize": "var(--wp--preset--font-size--x-large)"
+					"fontSize": "var:preset|font-size|x-large"
 				}
 			},
 			"h2": {
 				"typography": {
-					"fontSize": "var(--wp--preset--font-size--large)"
+					"fontSize": "var:preset|font-size|large"
 				}
 			},
 			"h3": {
@@ -948,12 +985,20 @@
 			},
 			"h6": {
 				"typography": {
-					"fontSize": "var(--wp--preset--font-size--medium)",
+					"fontSize": "var:preset|fontSize|medium",
 					"fontStyle": "italic",
 					"textTransform": "uppercase"
 				}
 			},
 			"link": {
+				"spacing": {
+					"padding": {
+						"top": "0.2em",
+						"right": "0.2em",
+						"bottom": "0.2em",
+						"left": "0.2em"
+					}
+				},
 				"color": {
 					"text": "var:preset|color|accent-darker",
 					"background": "var:preset|color|tertiary-lighter"
@@ -971,7 +1016,7 @@
 				},
 				":active": {
 					"color": {
-						"text": "var(--wp--preset--color--accent-darker)"
+						"text": "var:preset|color|accent-dark"
 					},
 					"typography": {
 						"textDecoration": "none"
@@ -992,8 +1037,8 @@
 			}
 		},
 		"typography": {
-			"fontFamily": "var(--wp--preset--font-family--wide-sans-serif)",
-			"fontSize": "var(--wp--preset--font-size--medium)",
+			"fontFamily": "var:preset|font-family|wide-sans-serif",
+			"fontSize": "var:preset|font-size|medium",
 			"lineHeight": "1.6"
 		}
 	}
