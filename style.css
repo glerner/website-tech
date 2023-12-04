@@ -32,22 +32,21 @@ from https://equalizedigital.com/accessibility-checker/empty-link/ */
 }
 
 /* Links */
-.wp-block-post-content a:where(:not(.wp-element-button, .wp-block-uagb-buttons)) {
+.wp-block-post-content a:where(:not(.wp-element-button, .wp-block-uagb-buttons)),
+.uagb-button__link, .wp-block-post-content .wp-block-button__link {
     color: var(--wp--preset--color--accent-dark);
     background-color: var(--wp--preset--color--white);
 }
 
-.uagb-button__link, .wp-block-post-content .wp-block-button__link {
-    color: var(--wp--preset--color--white);
-    background-color: var(--wp--preset--color--accent-dark);
-}
+/* probably done in theme.json
 a:where(:not(.wp-element-button, .uagb-button__wrapper)):hover {
     background-color: var(--wp--preset--color--accent-dark);
-    color: var(--wp--preset--color--base);
+    color: var(--wp--preset--color--white);
     text-decoration: none;
 }
+*/
+
 .wp-block-navigation .wp-block-navigation-item__content.wp-block-navigation-item__content:hover {
-    /* color: inherit; */
     color: var(--wp--preset--color--accent-dark);
     background-color: var(--wp--preset--color--white);
 }
@@ -98,6 +97,7 @@ summary::-webkit-details-marker {
 }
 
 /* styling for WS Form */
+
 .wsf-field, input[type="checkbox"].wsf-field + label.wsf-label, input[type="checkbox"].wsf-field + label.wsf-label::before {
 	color: var(--wp--preset--color--foreground);
     background-color: var(--wp--preset--color--secondary);
@@ -117,6 +117,7 @@ summary::-webkit-details-marker {
 /* end WS Form */
 
 /* Login Form styling from https://developer.wordpress.org/news/2023/08/adding-and-using-custom-settings-in-theme-json/ */
+
 input:where( :not( [type=checkbox] ):not( [type=radio ] ) ),
 select,
 textarea {
@@ -137,6 +138,8 @@ textarea {
 	display: block;
 	width: 100%;
 }
+
+/* end Login form */
 
 /* big CSS hover underline, thin un-hovered */
 a, .elementor a:where(:not(.wp-element-button, .uagb-button__wrapper)) {

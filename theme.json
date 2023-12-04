@@ -478,6 +478,23 @@
 				"color": "#000000",
 				"background": "#f1f5f9",
 				"borderColor": "#e2e8f0"
+			},
+			"uagbLayoutGrid": {
+				"color": "inherit",
+				"display": "inherit",
+				"link": {
+					"color": {
+						"text": { "ref": "styles.color.accent-dark" },
+						"background": { "ref": "styles.color.tertiary-lighter" }
+					},
+					":hover": {
+						"color": {
+							"text": { "ref": "styles.color.tertiary-lighter" },
+							"background": { "ref": "styles.color.accent-dark" }
+						}
+					}
+				}
+
 			}
 		}
 	},
