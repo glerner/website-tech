@@ -1,2 +1,4 @@
 # Dolphin file manager settings 
 .directory
+# Visual Studio Code workspace settings
+*.code-workspace

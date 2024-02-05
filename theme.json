@@ -479,6 +479,7 @@
 				"background": "#f1f5f9",
 				"borderColor": "#e2e8f0"
 			},
+			"textShadow": "2px 2px 2px rgba( 0, 0, 0, 0.7 )",
 			"uagbLayoutGrid": {
 				"color": "inherit",
 				"display": "inherit",

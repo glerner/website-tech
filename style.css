@@ -5,9 +5,9 @@ Author: George Lerner
 Author URI: https://glerner.com
 Description: Website Tech is a Twenty Twenty-Three child
 Requires at least: 6.1
-Tested up to: 6.2.2
-Requires PHP: 7.2
-Version: 1.02
+Tested up to: 6.4.3
+Requires PHP: 7.4
+Version: 1.03
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 Text Domain: website-tech
@@ -19,6 +19,17 @@ Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, feature
 .block-editor__container #et-switch-to-divi, .block-editor__container #et-switch-to-gutenberg, .block-editor__container .editor-post-switch-to-divi, .block-editor__container .editor-post-switch-to-divi.components-button.is-default, .block-editor__container .editor-post-switch-to-gutenberg, .block-editor__container .editor-post-switch-to-gutenberg.components-button.is-default, .editor-styles-wrapper .wp-site-blocks #et-switch-to-divi,
 .editor-styles-wrapper .wp-site-blocks #et-switch-to-gutenberg, .editor-styles-wrapper .wp-site-blocks .editor-post-switch-to-divi, .editor-styles-wrapper .wp-site-blocks .editor-post-switch-to-divi.components-button.is-default, .editor-styles-wrapper .wp-site-blocks .editor-post-switch-to-gutenberg, .editor-styles-wrapper .wp-site-blocks .editor-post-switch-to-gutenberg.components-button.is-default,
 .gutenberg__editor #et-switch-to-divi, .gutenberg__editor #et-switch-to-gutenberg, .gutenberg__editor .editor-post-switch-to-divi, .gutenberg__editor .editor-post-switch-to-divi.components-button.is-default, .gutenberg__editor .editor-post-switch-to-gutenberg, .gutenberg__editor .editor-post-switch-to-gutenberg.components-button.is-default { color: blue; overflow: hidden; }
+
+/* Variables */
+root {
+    --wp--custom--radius--medium: var(--wp--preset--font-size--normal,1em);
+    --wp--custom--radius--large: calc(var(--wp--custom--radius--medium)*1.5)
+}
+
+
+
+
+
 
 /* Screen Reader only
 from https://equalizedigital.com/accessibility-checker/empty-link/ */
@@ -34,9 +45,28 @@ from https://equalizedigital.com/accessibility-checker/empty-link/ */
 /* Links */
 .wp-block-post-content a:where(:not(.wp-element-button, .wp-block-uagb-buttons)),
 .uagb-button__link, .wp-block-post-content .wp-block-button__link {
-    color: var(--wp--preset--color--accent-dark);
-    background-color: var(--wp--preset--color--white);
+    color: var(--wp--preset--color--accent-dark, black);
+    background-color: var(--wp--preset--color--white, lightgreen);
+
 }
+
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: #e07a5f;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+  box-shadow: 5px 5px 10px #000;
+}
+
+.text {
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
 
 /* probably done in theme.json
 a:where(:not(.wp-element-button, .uagb-button__wrapper)):hover {
@@ -92,7 +122,7 @@ summary::-webkit-details-marker {
     background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/right-arrow.svg);
     color: transparent;
 }
-    details[open] summary::-webkit-details-marker {
+details[open] summary::-webkit-details-marker {
     background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/down-arrow.svg);
 }
 
@@ -198,30 +228,160 @@ a:hover {
     margin-bottom:15px;
 }
 
+/* Spectra Layout Grid */
+.uagb-taxonomy__outer-wrap.uagb-layout-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: var(--mdc-layout-grid-gutter-phone,12px);
+    grid-row-gap: var(--mdc-layout-grid-gutter-phone,12px);
+}
+.uagb-taxomony-box {
+    border-top-width: 1px;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-color: var(--wp--preset--color--tertiary-lighter);
+    border-style: solid;
+    display: grid;  /* important override of div display block */
+
+}
+.uagb-layout-grid .uagb-tax-link {
+    pointer-events: visible;    /* link should show different mouse pointer */
+    padding: 0;     /* prevent vertical line showing */
+}
+.uagb-layout-grid .uagb-taxomony-box a.uagb-tax-link, .uagb-layout-grid a.uagb-tax-link div {
+    /* taxonomy grid has text in a div within the link
+     * element default has styling like .uagb-block-3d8b49e2.uagb-layout-grid .uagb-tax-link color 777
+     */
+    color: var(--wp--preset--color--accent-dark);
+}
+.uagb-layout-grid a.uagb-tax-link:hover, .uagb-layout-grid a.uagb-tax-link:hover div {
+    color: var(--wp--preset--color--white);
+    background-color: var(--wp--preset--color--accent-dark);
+}
+
 /* from Responsive flexbox tables, by David Miller https://codepen.io/Orangetronic/pen/pJgpXw
+ * See also https://css-tricks.com/accessible-simple-responsive-tables/
 */
 table.table { width: 100%; }
-.table th, .table td {
-  text-align: left;
-  padding: 0.25em;
-}
-.table tr {
-  border-bottom: 1px solid #DDD;
-}
-@media screen and (max-width: 800px) {
-  tr {
+tr, .wp-block-table tr {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 0.5em 0;
-    border: 1px solid rgba(3,3,3,0.2);
-  }
-  td, th {
-    flex: 1 1 250px;
-    border: 0.5px solid rgba(3,3,3,0.2);
-  }
+    margin: 0.5em 0 1em;
+    border: 2px solid var(--wp--preset--color--tertiary-lighter);
 }
+td, th, .wp-block-table td, .wp-block-table th {
+    flex: 1 1 250px;
+    border: 1px solid var(--wp--preset--color--secondary-lighter);
+    padding: .5em;
+}
+
+/* Zebra striping, from https://codepen.io/davidelrizzo/pen/BjXBrz  then View Compiled CSS
+ * See main page https://css-tricks.com/accessible-simple-responsive-tables/
+ *   ========================================================================== */
+:root {
+    --table--stripe--odd: linear-gradient(135deg,#517FA4,#F3CC9A);
+    --table--stripe--even: #A0B7CD;
+    /* can't define CSS variables using variables
+     * --table--stripe--odd: var(--wp--preset--gradient--primary-gradient);
+    --table--stripe--even: var(--wp--preset--color--primary-lighter);
+    */
+}
+.is-striped {
+    /* background-image: linear-gradient(0, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.07)); */
+    background-image: var(--wp--preset--gradient--primary-gradient);
+}
+figure.wp-block-table.is-striped {
+    background-image: none;
+}
+figure.wp-block-table.is-striped tr:nth-child(even) {
+    background-color: var(--table--stripe--even);
+    /* if gradient, background-image: var(--table--stripe--even); */
+}
+figure.wp-block-table.is-striped tr:nth-child(odd) {
+    background-image: var(--table--stripe--odd);
+    /* background-image: var(--wp--preset--gradient--secondary-gradient) */
+    /* background-image: linear-gradient(0, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.07)); */
+}
+
 
 /* Header styles */
 
 /* Footer styles */
+
+/* AI Toolkit button, so AI Toolkit and Accessibility Checker buttons aren't covering each other */
+.mwai-chat.T9GqU1_HCj_oHtw9lgwt {
+    position: fixed;
+    right: 10px;
+    bottom: 15px;
+    width: 64px;
+}
+/* Accessibility Checker button */
+.edac-highlight-panel {
+    bottom: 19px!important;
+    position: fixed!important;
+    right: calc(var(--mwai-width,64px) + 15px);
+    width: auto;
+}
+
+/* Don't print elements
+ * assign class "no-print" to an element
+ */
+@media print
+{
+    .no-print, .no-print * {
+        display: none !important;
+    }
+    a::after {
+        content: " (" attr(href) ")";
+    }
+    figure a::after {
+        content: none;
+    }
+}
+
+@media print {
+	body {
+		background: #fff none !important;
+		color: #000;
+	}
+    #wrapper {
+        clear: both !important;
+        display: block !important;
+        float: none !important;
+        position: relative !important;
+    }
+	#header {
+		border-bottom: 2pt solid #000;
+		padding-bottom: 18pt;
+	}
+	#container,
+	#header,
+	#footer {
+		margin: 0;
+		width: 100%;
+	}
+    .entry-content {
+		font-size: 14pt;
+		line-height: 1.6em;
+	}
+	.entry-title {
+		font-size: 21pt;
+	}
+    /* Hide unnecessary print items */
+	#access,
+	#branding img,
+	#respond,
+	.comment-edit-link,
+	.edit-link,
+	.navigation,
+	.page-link,
+	.widget-area {
+		display: none !important;
+	}
+}
